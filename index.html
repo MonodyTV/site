@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      color: #000; /* Колір тексту чорний */
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <nav class="nav">
+          <a href="#" class="nav__link">Інформація</a>
+          <a href="#" class="nav__link">Чому Git?</a>
+          <a href="#" class="nav__link">Хто</a>
+          <a href="#" class="nav__link">Щасливі клієнти</a>
+          <a href="#" class="nav__link">Блог</a>
+          <a href="#" class="nav__link">Наша локація</a>
+          <a href="#" class="nav__link">Інформація</a>
+        </nav>
+      </div>
+      
+      <div class="header__content">
+        <div class="block1">
+          <div class="logo"></div>
+          <h2 class="text1">Можливості Git</h2>
+          <h1>Git дозволяє мати локальні копії репозиторіїв, працювати офлайн, легко створювати і зливати гілки, і швидко виконувати операції, що робить його ефективним для управління проектами та співпраці.</h1>
+        </div>
+      </div>
+    </div>
+
+<div class="table1">
+      <table>
+        <thead>
+          <tr>
+            <th>Команда</th>
+            <th>Опис</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>git init</td>
+            <td>Ініціалізує новий репозиторій Git.</td>
+          </tr>
+          <tr>
+            <td>git clone https://github.com/username/repository.git</td>
+            <td>Клонує репозиторій з віддаленого сервера.</td>
+          </tr>
+          <tr>
+            <td>git add file.txt<br>git add .</td>
+            <td>Додає файли до індексу (staging area).</td>
+          </tr>
+          <tr>
+            <td>git commit -m "Додані нові функції"</td>
+            <td>Створює новий коміт з описом змін.</td>
+          </tr>
+          <tr>
+            <td>git status</td>
+            <td>Показує статус файлів у репозиторії.</td>
+          </tr>
+          <tr>
+            <td>git push origin main</td>
+            <td>Надсилає локальні коміти до віддаленого репозиторію.</td>
+          </tr>
+          <tr>
+            <td>git checkout new-feature</td>
+            <td>Перемикається на вказану гілку.</td>
+          </tr>
+          <tr>
+            <td>git merge new-feature</td>
+            <td>Об'єднує вказану гілку з поточною.</td>
+          </tr>
+          <tr>
+            <td>git pull origin main</td>
+            <td>Оновлює локальну копію репозиторію з віддаленого репозиторію.</td>
+          </tr>
+          <tr>
+            <td>git branch<br>git branch new-feature</td>
+            <td>Переглядає доступні гілки або створює нову.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="image-container">
+      <img src="images/cert1.png" alt="Certificate">
+    </div>
+
+    
+
+  </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
