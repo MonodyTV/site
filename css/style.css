@@ -24,6 +24,14 @@ header {
     justify-content: center;
 }
 
+.header__top1 {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
 .header_logo {
     width: 115px;
 }
@@ -47,11 +55,23 @@ header {
 
 .block1 {
     margin-top: 5%;
-
     height: 400px;
+    display: flex;
+    flex-direction: column; /* Вирівнює елементи вертикально */
+    align-items: center;    /* Центрує елементи по горизонталі */
 }
 
+.containerik {
+    display: flex;
+    justify-content: center; /* Центрує по горизонталі */
+    align-items: center;     /* Центрує по вертикалі */
+    height: 100%;            /* Висота контейнера */
+}
 
+.logo {
+    width: 400px;           /* Ширина логотипу */
+    height: 200px;          /* Висота логотипу */
+}
 
 .block1 h2 {
     margin-top: 20px;    
@@ -82,6 +102,7 @@ header {
     margin-top: 20px;
     color: #000000;
 }
+
 
 .knopka {
     width: 200px;
@@ -443,31 +464,65 @@ hr {
     margin-right: 10px;
 }
 
-table {
+.table1 {
     width: 100%;
+    margin-top: 10%; /* Відступ зверху */
     border-collapse: collapse;
     background: rgb(206, 245, 255); /* Фон таблиці */
 }
 
-th, td {
+.table1 th, .table1 td {
     border: 1px solid #577097;
     padding: 8px;
     text-align: left;
     color: #000; /* Колір тексту чорний */
 }
 
-th {
-    background-color: #577097; /* Колір фону заголовків */
+.table1 th {
+    background-color: #000000; /* Колір фону заголовків */
     color: #fff; /* Колір тексту в заголовках */
 }
 
-tr:nth-child(even) {
+.table1 tr:nth-child(even) {
     background-color: #f2f2f2; /* Світлий фон для парних рядків */
 }
 
-tr:nth-child(odd) {
+.table1 tr:nth-child(odd) {
     background-color: #ffffff; /* Білий фон для непарних рядків */
 }
+
+
+
+  
+
+.styled-table {
+    width: 100%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    background: rgb(206, 245, 255); /* Фон таблиці */
+  }
+  
+  .styled-table th, .styled-table td {
+    border: 1px solid #577097;
+    padding: 8px;
+    text-align: left;
+    color: #000; /* Колір тексту чорний */
+  }
+  
+  .styled-table th {
+    background-color: #000000; /* Колір фону заголовків */
+    color: #fff; /* Колір тексту в заголовках */
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Світлий фон для парних рядків */
+  }
+  
+  .styled-table tr:nth-child(odd) {
+    background-color: #ffffff; /* Білий фон для непарних рядків */
+  }
+  
+
 
 .image-container {
     display: flex;
@@ -481,3 +536,21 @@ tr:nth-child(odd) {
     height: auto;
   }
   
+
+  .command {
+    font-family: monospace; /* Шрифт моноширинний */
+    background-color: #333; /* Темний фон для команд */
+    color: #0f0; /* Зелений текст */
+    padding: 10px; /* Внутрішній відступ */
+    border-radius: 5px; /* Закруглені кути */
+    margin: 5px 0; /* Зовнішній відступ */
+    overflow-x: auto; /* Прокрутка для довгих рядків */
+    white-space: pre; /* Зберігає пробіли та переноси рядків */
+}
+.centered-title1 {
+    text-align: center; /* Вирівнювання по центру */
+    font-size: 50px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний текст */
+    margin: 20px 0; /* Відступи зверху і знизу */
+    color: #000000; /* Колір тексту (наприклад, блакитний) */
+}

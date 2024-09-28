@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      color: #000; /* Колір тексту чорний */
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top1">
+        <nav class="nav">
+          <a href="#" class="nav__link">Інформація</a>
+          <a href="index.html" class="nav__link">Чому Git?</a>
+          <a href="#" class="nav__link">Linux</a>
+          <a href="#" class="nav__link">Щасливі клієнти</a>
+          <a href="#" class="nav__link">Блог</a>
+          <a href="#" class="nav__link">Наша локація</a>
+          <a href="#" class="nav__link">Інформація</a>
+        </nav>
+      </div>
+      
+      <div class="header__content">
+        <div class="block1">
+          <div class="containerik">
+            <img src="images/LinuxLogo.png" alt="" class="logo">
+        </div>
+          <h2 class="text1">Linux</h2>
+          <h1>GNU/Linux — це безкоштовна операційна система на основі ядра Linux і інструментів GNU. Вона відкрита для модифікацій і широко використовується завдяки стабільності, безпеці та гнучкості.</h1>
+        </div>
+      </div>
+    </div>
+
+<div class="table1">
+      <table>
+        <thead>
+          <tr>
+            <th>Команда</th>
+            <th>Опис</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>pwd</td>
+            <td>показує поточний робочий каталог.</td>
+          </tr>
+          <tr>
+            <td>echo "Hello, Linux!"</td>
+            <td>виводить текст або змінну в термінал.</td>
+          </tr>
+          <tr>
+            <td>ls</td>
+            <td>показує вміст каталогу.</td>
+          </tr>
+          <tr>
+            <td>cd /home/user</td>
+            <td>змінює поточний робочий каталог.</td>
+          </tr>
+          <tr>
+            <td>touch file.txt</td>
+            <td>створює новий порожній файл.</td>
+          </tr>
+          <tr>
+            <td>mkdir new_directory</td>
+            <td>створює новий каталог.</td>
+          </tr>
+          <tr>
+            <td>cp file.txt /destination</td>
+            <td>копіює файли або каталоги.</td>
+          </tr>
+          <tr>
+            <td>mv file.txt /new_location</td>
+            <td>Об'єднує вказану гілку з поточною.</td>
+          </tr>
+          <tr>
+            <td>rm file.txt</td>
+            <td>видаляє файли або каталоги.</td>
+          </tr>
+          <tr>
+            <td>history</td>
+            <td>показує список попередніх команд.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="table2">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Дистрибютив</th>
+            <th>Переваги</th>
+            <th>Недоліки</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ubuntu</td>
+            <td>Зручний для початківців, велика спільнота, часті оновлення.</td>
+            <td>Може бути важкуватим для старих комп'ютерів, використовує більше ресурсів.</td>
+          </tr>
+          <tr>
+            <td>Debian</td>
+            <td>Надійність, стабільність, великий репозиторій пакетів.</td>
+            <td>Більш консервативні оновлення, менш дружній для новачків.</td>
+          </tr>
+          <tr>
+            <td>Fedora</td>
+            <td>Сучасне програмне забезпечення, інноваційні функції, підтримка Red Hat.</td>
+            <td>Часті оновлення, може бути нестабільним через нові функції.</td>
+          </tr>
+          <tr>
+            <td>Arch Linux</td>
+            <td>Повний контроль над системою, велика гнучкість, мінімалізм.</td>
+            <td>Не для новачків, складний процес встановлення.</td>
+          </tr>
+          <tr>
+            <td>Mint</td>
+            <td>Зручний інтерфейс, чудова альтернатива для користувачів Windows.</td>
+            <td>Затримка з оновленнями, порівняно менш активна спільнота.</td>
+          </tr>
+          <tr>
+            <td>OpenSUSE</td>
+            <td>Стабільність, простота в адмініструванні, доступні два режими (Leap і Tumbleweed).</td>
+            <td>Менша підтримка спільноти, менш популярний серед новачків.</td>
+          </tr>
+          <tr>
+            <td>Manjaro</td>
+            <td>Простота в порівнянні з Arch, регулярні оновлення, гарна документація.</td>
+            <td>Може містити нестабільні пакети через часті оновлення.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <h2 class="centered-title1">Скрипт авторизації</h2>
+
+    <div class="command">#!/bin/bash</div>
+    <div class="command"># Запит користувача на ім'я</div>
+    <div class="command">read -p "Введіть ім'я користувача: " username</div>
+    <div class="command"># Запит на пароль (приховано)</div>
+    <div class="command">read -sp "Введіть пароль: " password</div>
+    <div class="command">echo</div>
+    <div class="command"># Імітація авторизації</div>
+    <div class="command">if [[ ($username == "admin" && $password == "password123") ||</div>
+    <div class="command">      ($username == "user1" && $password == "mypassword") ||</div>
+    <div class="command">      ($username == "user2" && $password == "secretpass") ]]; then</div>
+    <div class="command">    echo "Авторизація успішна! Ласкаво просимо, $username."</div>
+    <div class="command">else</div>
+    <div class="command">    echo "Неправильне ім'я користувача або пароль."</div>
+    <div class="command">fi</div>
+
+  </header>
+
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
